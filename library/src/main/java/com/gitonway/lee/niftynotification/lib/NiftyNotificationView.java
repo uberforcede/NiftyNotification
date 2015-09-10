@@ -212,13 +212,13 @@ public class NiftyNotificationView {
         int padding = px2dip(this.configuration.textPadding);
         int viewHeight = px2dip(this.configuration.viewHeight);
         TextView text = new TextView(this.activity);
-        text.setMaxHeight(viewHeight);
-        text.setMaxHeight(viewHeight);
+        text.setMinimumHeight(viewHeight);
         text.setId(TEXT_ID);
         text.setText(this.text);
+        text.setTextSize(16);
         text.setMaxLines(this.configuration.textLines);
         text.setEllipsize(TextUtils.TruncateAt.END);
-        text.setPadding(padding*2, padding, padding*2, padding);
+        text.setPadding(24, padding, 24, padding);
         text.setTextColor(Color.parseColor(this.configuration.textColor));
         text.setBackgroundColor(Color.parseColor(this.configuration.backgroundColor));
 

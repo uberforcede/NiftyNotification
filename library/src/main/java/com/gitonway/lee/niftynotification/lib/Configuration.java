@@ -79,7 +79,7 @@ public class Configuration {
             textColor="#FF444444";
             backgroundColor="#FFBDC3C7";
             textPadding=5;
-            viewHeight=48;
+            viewHeight=100;
             iconBackgroundColor="#FFFFFFFF";
             textGravity= Gravity.CENTER;
             textLines=2;
