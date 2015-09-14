@@ -95,7 +95,8 @@ public class NiftyNotificationView {
     }
 
     public static NiftyNotificationView build(Activity activity, CharSequence text, Effects effects, int viewGroupResId, Configuration configuration) {
-        return new NiftyNotificationView(activity, text, effects, (ViewGroup) activity.findViewById(viewGroupResId), configuration);
+        View rootView = activity.getWindow().getDecorView().findViewById(viewGroupResId);
+        return new NiftyNotificationView(activity, text, effects, (ViewGroup) rootView.getRootView(), configuration);
     }
 
 
