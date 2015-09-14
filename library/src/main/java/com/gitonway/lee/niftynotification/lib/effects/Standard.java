@@ -15,9 +15,9 @@ package com.gitonway.lee.niftynotification.lib.effects;
  * limitations under the License.
  */
 
+import android.animation.ObjectAnimator;
 import android.view.View;
 
-import com.nineoldandroids.animation.ObjectAnimator;
 
 public class Standard extends BaseEffect{
     @Override

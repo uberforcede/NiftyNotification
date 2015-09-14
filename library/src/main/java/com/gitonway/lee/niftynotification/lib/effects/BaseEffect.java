@@ -15,11 +15,10 @@ package com.gitonway.lee.niftynotification.lib.effects;
  * limitations under the License.
  */
 
+import android.animation.AnimatorSet;
 import android.view.View;
 
 import com.gitonway.lee.niftynotification.lib.Configuration;
-import com.nineoldandroids.animation.AnimatorSet;
-import com.nineoldandroids.view.ViewHelper;
 
 public abstract class BaseEffect {
 
@@ -53,8 +52,9 @@ public abstract class BaseEffect {
         mAnimatorSet.start();
     }
     public void reset(View view) {
-        ViewHelper.setPivotX(view, view.getWidth() / 2.0f);
-        ViewHelper.setPivotY(view, view.getHeight() / 2.0f);
+
+        view.setPivotX(view.getWidth() / 2.0f);
+        view.setPivotY(view.getHeight() / 2.0f);
     }
     public BaseEffect setDuration(long duration) {
         this.mDuration = duration;

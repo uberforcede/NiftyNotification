@@ -15,16 +15,16 @@ package com.gitonway.lee.niftynotification.lib.effects;
  * limitations under the License.
  */
 
+import android.animation.ObjectAnimator;
 import android.view.View;
 
-import com.nineoldandroids.animation.ObjectAnimator;
 
 public class Jelly extends BaseEffect {
 
     @Override
     protected void setInAnimation(View view) {
         getAnimatorSet().playTogether(
-                ObjectAnimator.ofFloat(view, "scaleX", .3f, .5f, .9f,.8f,.9f,1).setDuration(mDuration),
+                ObjectAnimator.ofFloat(view, "scaleX", .3f, .5f, .9f, .8f, .9f, 1).setDuration(mDuration),
                 ObjectAnimator.ofFloat(view,"scaleY",.3f, .5f, .8f,.9f,.8f,1).setDuration(mDuration),
                 ObjectAnimator.ofFloat(view, "alpha", 0, 1).setDuration(mDuration*3/2)
         );
